@@ -8,29 +8,22 @@ READ ME
 
 
 James Embry <br>
-March 2020 <br>
-Tuesday Project Class <br>
-Camp Registration Project <br>
+June 2020 <br>
+Tuesday Python Class <br>
+Blackjack Poker Project <br>
 
 What is it? <br>
-A program developed using C# that allows camp coordinators to enter and save camper registration information.  Using EntityFramwork , the application will create a user interface to convert the user input data into an object of a specific class and store it in a database.
+A program developed using Python that runs on the command line.  A player will Blackjack Poker against the computer. 
 
 Technical Summary <br>
-C# <br>
+Python 3.8 <br>
 Visual Studio Code <br>
-.NET SDK  3.1.102 <br>
-Microsoft EntityFramework Core <br>
-Microsoft EntityFramework SQL Server (Database) <br>
-Microsoft EntityFramework dotnet CLI <br>
-Microsoft EntityFramework dotnet Design <br>
-HTML, CSS, or JavaScript <br>
-Json <br>
-MVC/Razor <br>
+
 
 How to make the Project work.<br>
 1 Open the GitHub link with Visual Studio Code.<br>
 2 Create a Console by Clicking  on Terminal and Open a New Terminal.<br>
-3 In the Console type dotnet ef database update then press ENTER.<br>
+<!-- 3 In the Console type dotnet ef database update then press ENTER.<br>
 4 In the Console type dotnet run then press ENTER.<br>
 The program will build and create a local web address and other directions in the console.<br>
 5 Type the address (http://localhost5001) into a Chrome browser.<br>
@@ -59,14 +52,15 @@ Privacy page example<br>
 Camper page (first and last name, email, phone, enrollment date, (Create, Edit, Details, and Delete))<br>
 Game Choice page (3 dropdown lists with 3 chioces of games in each (Create, Edit, Details, and Delete))<br>
 Meal Choice page (3 dropdown lists with 3 chioces of food in each (Create, Edit, Details, and Delete))<br>
-Enrollment page (Lists all campers with details) (Enroll new campers on Create page with dropdown lists that inclide the campers full name, school level (Primary, Middle, or High), their game selection (and other choices),  thier food selection (and other choices), (Create, Edit, Details, and Delete))<br>
+Enrollment page (Lists all campers with details) (Enroll new campers on Create page with dropdown lists that inclide the campers full name, school level (Primary, Middle, or High), their game selection (and other choices),  thier food selection (and other choices), (Create, Edit, Details, and Delete))<br> -->
 
 Milestone List <br>
-Week 1: Outline Project. <br>
-Week 3: Add and retrieve data (Name) to a json file or database. <br>
-Week 5: Build selection categories (age, food choice, etc.). <br>
-Week 7: Create a user-friendly interface. <br>
-Week 8: Complete project. <br>
+Week 1: Outline project ideas. <br>
+Week 3: Decide on a project and complete an outline <br>
+Week 5: Build selection categories (cards, deck, player, scoring, CSV file.). <br>
+Week 7: Check for problem and correct  mistakes. <br>
+Week 10: Complete project. <br>
+Week 12: Projects Due by Friday.
 
 
 
