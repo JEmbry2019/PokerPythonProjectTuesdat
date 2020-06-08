@@ -1,59 +1,101 @@
 import random
-import csv
-from random import shuffle
-# Reads csv a prints it in lists
-card_name_to_value_dict = {}
-with open('cardfile.csv', newline='') as csvfile:
-   
-    reader = csv.DictReader(csvfile, delimiter= '\t')
-    reader.fieldnames = [field.strip().lower() for field in reader.fieldnames]
-   
-    for row in reader:
-        print(row.keys())
-        print(row.items())
-        print(row.values())
-            
-        print(row['face'], row['suit'], row['value'])
+
+class Deck:
+
+    def __init__(self):
+        self.suit = ["Hearts", "Clubs", "Spades", "Diamonds"]
+        self.val = {'A':1, '2':2, '3':3, '4':4, '5':5, '6':6, '7':7, '8':8, '9':9, '10':10, 'J':10, 'Q':10, 'K':10}
+        self.deck = []
+
+    def make_deck(self):
+        for s in self.suit:
+            for v in self.val:
+                self.deck.append(v + " of " + s)
+        return random.shuffle(self.deck)
+
+    def give_player_one(self):
+        card = self.deck.pop()
+        return card
+
+    def give_dealer_one(self):
+        card = self.deck.pop()
+        return card
+
+    def create_player_hand(self):
+        hand = []
+        for card in range(2):
+            hand.append(self.give_player_one())
+        return hand
+
+    def create_dealer_hand(self):
+        hand = []
+        for card in range(2):
+            hand.append(self.give_dealer_one())
+        return hand
 
 
+    def get_player_hand_value(self, hand):
+       d = 0
+       for card in hand:
+           for value in card[0]:
+               try:
+                   value = int(value)
+                   if int(value) == 1:
+                       value = 10
+               except ValueError:
+                   if value == 'A':
+                       value = 11
+                   elif value in 'JQK':
+                       value = 10
+           d += int(value)
+       return d
+
+    def get_dealer_hand_value(self, hand):
+       d = 0
+       for card in hand:
+           for value in card[0]:
+               try:
+                   value = int(value)
+                   if int(value) == 1:
+                       value = 10
+               except ValueError:
+                   if value == 'A':
+                       value = 11
+                   elif value in 'JQK':
+                       value = 10
+           d += int(value)
+       return d
 
 
+    def get_player_single_value(self, card):
+        d = 0
+        for value in card[0]:
+            try:
+                value = int(value)
+                if int(value) == 1:
+                    value = 10
+            except ValueError:
+                if value == 'A':
+                    value = 11
 
-#_________________________
-#CSV Notes
- # writer??? fieldnames = ['Show_Number', 'Air_Date', 'Round', 'Category', 'Value', 'Question', 'Answer']
-    #rows = list(reader)
+                elif value in 'JQK':
+                    value = 10
+        d += int(value)
+        return d
 
+    def get_dealer_single_value(self, card):
+        d = 0
+        for value in card[0]:
+            try:
+                value = int(value)
+                if int(value) == 1:
+                    value = 10
+            except ValueError:
+               if value == 'A':
+                   value = 11
+               elif value in 'JQK':
+                   value = 10
+        d += int(value)
+        return d
 
-
-    # card_name_to_value_dict = {}
-# suit_list = []
-# with open('cardfile.csv')as csvfile:
-#      PlayingCards = csv.reader(csvfile, delimiter = ',')
-#      for row in PlayingCards:
-#          new_cardname, new_cardvalue, new_suitvalue = row
-#          if new_cardname:
-#             card_name_to_value_dict[new_cardname] = new_cardvalue
-#          if new_suitvalue.strip():
-#             suit_list.append(new_suitvalue.replace("\n",""))
-# string_result = "\n".join(["\t".join([name, value]) for each_suit in suit_list for name,value in card_name_to_value_dict.items()])      
-# print (string_result)
-# The string result can be saved into a file for submission
-
-#Card Notes  _______________________________________________________________________  
-
-# def RANKS(): return [ "Ace", "2", "3", "4", "5", "6", "7","8", "9", "10", "Jack", "Queen", "King" ]
-# def SUITS(): return [ "Clubs", "Diamonds", "Hearts", "Spades" ]
-
-# class Card:
-#     def __init__(self, value, color):
-#         self.value = value
-#         self.color = color
-
-# colors = ['heart', 'diamonds', 'spades', 'clubs']
-
-
-# deck = [Card(value, color) for value in range(1, 14) for color in colors]
-
-# print(RANKS())
-# print(SUITS())
+deck = Deck()
