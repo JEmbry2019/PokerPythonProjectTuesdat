@@ -1,5 +1,6 @@
 import random
 from card import Card
+from card import Hand
 
 class Deck:
     def __init__(self):
