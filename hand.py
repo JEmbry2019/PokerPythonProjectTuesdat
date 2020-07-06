@@ -34,6 +34,6 @@ class Hand:
             print("hidden")
             print(self.cards[1])
         else:
-            for card in self.cards:
+            for card in self.cards:  
                 print(card)
                 print("Value:", self.get_value())
