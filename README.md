@@ -17,8 +17,14 @@ A program developed using Python that runs on the command line.  A player will B
 
 
 # How to make the Project work.<br>
-1 Open the GitHub link with Visual Studio Code.<br>
-2 Create a Console by Clicking  on Terminal and Open a New Terminal.<br>
+1. Open the GitHub link with Visual Studio Code.<br>
+2. Click on the <b>game.py<b> file tab.
+2. Create a Console by Clicking  on Terminal and Open a New Terminal.<br>
+3. Run the program with VS Code using one of the following:<br>
+* Ctrl F5
+* Click on the Run Python Icon (green triangle) at the top.
+* Click on Run on the top taskbar and select 'Run Without Debugging'.<br>
+
 
 # TEST ???????<br>
 
