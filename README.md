@@ -1,10 +1,6 @@
-Blackjack Poker
-Code Louisville Python Project
-Summer 2020
-
-James Embry
-READ ME
- SAmple Read Me
+# Blackjack Poker
+#### Code Louisville Python Project
+#### Summer 2020
 
 
 James Embry <br>
@@ -12,38 +8,20 @@ June 2020 <br>
 Tuesday Python Class <br>
 Blackjack Poker Project <br>
 
-What is it? <br>
+# What is it? <br>
 A program developed using Python that runs on the command line.  A player will Blackjack Poker against the computer. 
 
-Technical Summary <br>
-Python 3.8 <br>
-Visual Studio Code <br>
+# Technical Summary <br>
+* Python 3.8 <br>
+* Visual Studio Code <br>
 
 
-How to make the Project work.<br>
+# How to make the Project work.<br>
 1 Open the GitHub link with Visual Studio Code.<br>
 2 Create a Console by Clicking  on Terminal and Open a New Terminal.<br>
-<!-- 3 In the Console type dotnet ef database update then press ENTER.<br>
-4 In the Console type dotnet run then press ENTER.<br>
-The program will build and create a local web address and other directions in the console.<br>
-5 Type the address (http://localhost5001) into a Chrome browser.<br>
-6 Click on Campers:<br>
-  Click on Create New.<br>
-    Follow the prompts to enter a camper.<br>
-  Click on Create.<br>
-7 Click on Games:<br>
-  Click on Create New.<br>
-    Follow the prompts to select your 3 games.<br>
-  Click on Create.<br>
-8 Click on Meals:<br>
-  Click on Create New:<br>
-    Follow the prompts to select your 3 meals.<br>
-  Click on Create.<br>    
-9 Click on Enrollments:<br>
-  Click on Create New:<br> 
-  Follow the prompts to enroll your camper.<br>
-  Select your name, meals, games, and grade level.<br>
-  Click on Create.<br>
+
+# TEST ???????<br>
+
 
 
 Features Include:<br>

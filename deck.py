@@ -22,6 +22,13 @@ from hand import Hand
 
 
 
+""" The Deck class instanciates a deck of cards object each time the game is played.
+    When we pass self.cards to the Card class, and use list comprehension to loop over the suit and value lists 
+    and creates a complete deck of cards.
+    If the deck is > 1 it is reordered with shuffle ( a deck with 1 or less cards cannot be suffled).
+    The pop method removes the card at index 0 and that card is returned.
+"""
+
 
 class Deck:
     def __init__(self):

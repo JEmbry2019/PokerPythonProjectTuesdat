@@ -6,7 +6,7 @@ class Hand:
 
     def add_card(self, card):
         self.cards.append(card)
-
+        print(card)     # Extra to print all cards ok to delete
 
     def calculate_value(self):
         self.value = 0
