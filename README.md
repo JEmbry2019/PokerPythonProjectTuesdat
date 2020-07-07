@@ -7,9 +7,16 @@ James Embry <br>
 June 2020 <br>
 Tuesday Python Class <br>
 Blackjack Poker Project <br>
+This program follows an examples:
+* Title: Code Louisville Example
+* Author: Zach Tibbitts
+* Date: 2020
+* Title:Tkinter GUI Programing by Example
+* Author: David Love
+* Date: 2018 
 
 # What is it? <br>
-A program developed using Python that runs on the command line.  A player will Blackjack Poker against the computer. 
+A program developed using Python that runs on the command line.  A player will play Blackjack Poker against the computer. 
 
 # Technical Summary <br>
 * Python 3.8 <br>
@@ -18,12 +25,12 @@ A program developed using Python that runs on the command line.  A player will B
 
 # How to make the Project work.<br>
 1. Open the GitHub link with Visual Studio Code.<br>
-2. Click on the <b>game.py<b> file tab.
-2. Create a Console by Clicking  on Terminal and Open a New Terminal.<br>
-3. Run the program with VS Code using one of the following:<br>
+2. Click on the *game.py* file tab.
+2. Create a Console by Clicking  on Terminal and Open a New Terminal.
+3. Run the program with VS Code using one of the following:
 * Ctrl F5
 * Click on the Run Python Icon (green triangle) at the top.
-* Click on Run on the top taskbar and select 'Run Without Debugging'.<br>
+* Click on Run on the top taskbar and select 'Run Without Debugging'.
 
 
 # TEST ???????<br>
