@@ -21,7 +21,7 @@ class Hand:
                 else:
                     self.value += 10
 
-        if has_ace and self.value > 21:
+        if has_ace and self.value > 21:   # If over 21 Ace value drops from 11 to 1
             self.value -= 10
 
     def get_value(self):
@@ -36,4 +36,4 @@ class Hand:
         else:
             for card in self.cards:  
                 print(card)
-                print("Value:", self.get_value())
+            print("Value:", self.get_value())
