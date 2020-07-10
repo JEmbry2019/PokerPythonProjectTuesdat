@@ -2,16 +2,16 @@ import random
 
 
 """ The Card class instanciates a card object.
-    The card is assigned a suit and a value attribute.
+    The card is assigned a suit and a rank attribute.
     The __repr__ function prints a readable card.
 """
 class Card:
-    def __init__(self, suit, value):
+    def __init__(self, suit, rank):
         self.suit = suit
-        self.value = value
+        self.rank = rank
 
     def __repr__(self):
-        return " of ".join((self.value, self.suit))
+        return " of ".join((self.rank, self.suit))
 
 
 # if __name__ == "__main__":
@@ -21,7 +21,7 @@ class Card:
 
 
 """ The Deck class instanciates a deck of cards object each time the game is played.
-    When we pass self.cards to the Card class, and use list comprehension to loop over the suit and value lists 
+    When we pass self.cards to the Card class, and use list comprehension to loop over the suit and rank lists 
     and creates a complete deck of cards.
     If the deck is > 1 it is reordered with shuffle ( a deck with 1 or less cards cannot be suffled).
     The pop method removes the card at index 0 and that card is returned.
@@ -52,7 +52,7 @@ class Hand:
     def __init__(self, dealer=False):
         self.dealer = dealer
         self.cards = []
-        self.value = 0
+        self.rank = 0
         
 
     def add_card(self, card):
@@ -60,25 +60,25 @@ class Hand:
         print('******loop**********')  # my code
         print(card)
         print('****************')
-    def calculate_value(self):
-        self.value = 0
+    def calculate_rank(self):
+        self.rank = 0
         has_ace = False
         for card in self.cards:
-            if card.value.isnumeric():
-                self.value += int(card.value)
+            if card.rank.isnumeric():
+                self.rank += int(card.rank)
             else:
-                if card.value == "A":
+                if card.rank == "A":
                     has_ace = True
-                    self.value += 11
+                    self.rank += 11
                 else:
-                    self.value += 10
+                    self.rank += 10
 
-        if has_ace and self.value > 21:   # If over 21 Ace value drops from 11 to 1
-            self.value -= 10
+        if has_ace and self.rank > 21:   # If over 21 Ace rank drops from 11 to 1
+            self.rank -= 10
 
-    def get_value(self):
-        self.calculate_value()
-        return self.value
+    def get_rank(self):
+        self.calculate_rank()
+        return self.rank
 
     def display(self):
         if self.dealer:
@@ -87,7 +87,7 @@ class Hand:
         else:
             for card in self.cards:
                 print(card)
-            print("Value:", self.get_value())
+            print("rank:", self.get_rank())
 
 
 class Game:
@@ -134,7 +134,7 @@ class Game:
                         print("You have lost!")
                         game_over = True
                 else:
-                    player_hand_value = self.player_hand.get_value()
+                    player_hand_rank = self.player_hand.get_value()
                     dealer_hand_value = self.dealer_hand.get_value()
 
                     print("Final Results")

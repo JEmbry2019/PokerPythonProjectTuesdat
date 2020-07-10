@@ -12,7 +12,7 @@ This program follows examples found online and on Github:
 * Author: Zach Tibbitts
 * Date: 2020
 
-* Title:Tkinter GUI Programing by Example
+* Title: Tkinter GUI Programing by Example
 * Author: David Love
 * Date: 2018 
 
@@ -35,9 +35,51 @@ A program developed using Python that runs on the command line.  A player will p
 
 
 # TEST ???????<br>
+ 
+## Source Overview
+
+This project consists of a few classes:
+
+* `Game` The loop logic to run the game is contained in this class.
+* `Card` This class instantiates a Card object.
+    * It contains an `__init__` method to construct and initialize the card with a `suit` and `rank`(or point value).
+    * It also contains a  `__repr__` method for proper formatting.
+* `Deck` This class instantiates a Deck object.
+    * When initialized with the `__init__` method, it creates an instance of a deck of 52 playing cards.
+    * `shuffle()`: randomizes the order of the cards
+    * `deal()`: removes the top card from the deck and returns it.
+* `Hand` This class instantiates a Hand object.
+    * When initialized with the `__init__` method, it creates an empty list object containing no cards and no point value.
+    * `cards`: Is a list of `Card` objects in the hand.
+    * `add_card(card)`: Is a method to put the given card into the hand.
+    * `calculate_rank()`: Calculates the point value of a card. If the card is an ace, it has a point value of 11 or 1 if `self.rank` > 21.
+    * `get_rank`: Is a method to calculate the total point value and returns it as `self.rank`.
+    * `display()`: Is a method that prints the Dealer and Player hands to the console.
+
+      ***** STOPPED HERE  *****  With Edit.
+    
+The game loop logic itself is contained in the `Game` class. Check the comments in that file for more information
 
 
 
+
+
+### Requirements:
+
+This project fulfills the following requirements:
+
+* Implement a “master loop” console application where the user can repeatedly enter commands/perform actions, including choosing to exit the program
+    * There are two such loops. The outer "Play again" one and the inner "hit/stay" loop. Both are in `game.py`
+* Create a class, then create at least one object of that class and populate it with data
+    * All of `Card`, `Hand`, and `Deck` qualify
+* Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program
+    * Both `Hand` and `Deck` use a list internally to store their data
+* Create and call at least 3 functions, at least one of which must return a value that is used
+    * So many functions. In particular `draw()` returns a value, a `Card` that is used
+* Create 3 or more unit tests for your application
+    * They reside in `tests.py`
+
+SAMPLE BELOW ------------- SAMPLE BELOW
 Features Include:<br>
 Homepage<br>
 Privacy page example<br>

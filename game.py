@@ -49,16 +49,16 @@ class Game:
                         print("You have lost!")
                         game_over = True
                 else:
-                    player_hand_value = self.player_hand.get_value()
-                    dealer_hand_value = self.dealer_hand.get_value()
+                    player_hand_rank = self.player_hand.get_rank()
+                    dealer_hand_rank = self.dealer_hand.get_rank()
 
                     print("Final Results")
-                    print("Your hand:", player_hand_value)
-                    print("Dealer's hand:", dealer_hand_value)
+                    print("Your hand:", player_hand_rank)
+                    print("Dealer's hand:", dealer_hand_rank)
 
-                    if player_hand_value > dealer_hand_value:
+                    if player_hand_rank > dealer_hand_rank:
                         print("You Win!")
-                    elif player_hand_value == dealer_hand_value:
+                    elif player_hand_rank == dealer_hand_rank:
                         print("Tie!")
                     else:
                         print("Dealer Wins!")
@@ -74,14 +74,14 @@ class Game:
                 game_over = False
 
     def player_is_over(self):
-        return self.player_hand.get_value() > 21
+        return self.player_hand.get_rank() > 21
 
     def check_for_blackjack(self):
         player = False
         dealer = False
-        if self.player_hand.get_value() == 21:
+        if self.player_hand.get_rank() == 21:
             player = True
-        if self.dealer_hand.get_value() == 21:
+        if self.dealer_hand.get_rank() == 21:
             dealer = True
 
         return player, dealer
