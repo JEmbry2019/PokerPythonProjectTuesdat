@@ -2,25 +2,6 @@ import random
 from card import Card
 from hand import Hand
 
-# class Deck:
-#     def __init__(self):
-#         self.card = [Card(s, v) for s in ["Spades", "Clubs", "Hearts", "Diamonds"] for v in ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]]
-
-#         print('This is the deck')
-#         print(self.card)
-
-#     def shuffle(self):
-#         if len(self.card) > 1:
-#             random.shuffle(self.card)
-
-#         print('This is the Shuffled deck')
-#         print(self.card)
-
-#     def deal(self):
-#         if len(self.card) > 1:
-#             return self.card.pop(0)
-
-
 
 """ The Deck class instanciates a deck of cards object each time the game is played.
     When we pass self.cards to the Card class, and use list comprehension to loop over the suit and rank lists 
@@ -32,7 +13,7 @@ from hand import Hand
 
 class Deck:
     def __init__(self):
-        self.cards = [Card(s, v) for s in ["Spades", "Clubs", "Hearts", "Diamonds"] for v in
+        self.cards = [Card(s, r) for s in ["Spades", "Clubs", "Hearts", "Diamonds"] for r in
                       ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]]
         print('This is the deck')
         print(self.cards)
