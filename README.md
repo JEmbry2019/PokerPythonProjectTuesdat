@@ -23,6 +23,12 @@ A program developed using Python that runs on the command line.  A player will p
 * Python 3.8 <br>
 * Visual Studio Code <br>
 
+# Code Louisville requirements it meets.
+* Implement a “master loop” console application where the user can repeatedly enter commands/perform actions, including choosing to exit the program
+* Create a class, then create at least one object of that class and populate it with data
+* Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program
+* Create and call at least 3 functions, at least one of which must return a value that is used
+
 
 # How to make the Project work.<br>
 1. Open the GitHub link with Visual Studio Code.<br>
@@ -32,6 +38,11 @@ A program developed using Python that runs on the command line.  A player will p
   * Ctrl F5
   * Click on the Run Python Icon (green triangle) at the top.
   * Click on Run on the top taskbar and select 'Run Without Debugging'.
+4. Click in the *Console* and follow the prompts:
+  * y for YES
+  * n for NO
+  * h for HIT
+  * s for STAY
 
 
 # TEST ???????<br>
