@@ -67,20 +67,17 @@ This project consists of a few classes:
     * `get_rank`: Is a method to calculate the total point value and returns it as `self.rank`.
     * `display()`: Is a method that prints the Dealer and Player hands to the console.
 
-      ***** STOPPED HERE  *****  With Edit.
-    
-The game loop logic itself is contained in the `Game` class. Check the comments in that file for more information
-
-
-
-
+ 
 
 ### Requirements:
 
 This project fulfills the following requirements:
 
 * Implement a “master loop” console application where the user can repeatedly enter commands/perform actions, including choosing to exit the program
-    * There are two such loops. The outer "Play again" one and the inner "hit/stay" loop. Both are in `game.py`
+    * There are two such loops. The outer (main) 'playing' loop and the inner 'Hit/Stick input' loop. Both are in `game.py`
+
+      ***** STOPPED HERE  *****  With Edit.
+
 * Create a class, then create at least one object of that class and populate it with data
     * All of `Card`, `Hand`, and `Deck` qualify
 * Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program

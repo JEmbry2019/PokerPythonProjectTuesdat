@@ -27,7 +27,7 @@ class Hand:
         self.calculate_rank()
         return self.rank
 
-
+    # This function prints the dealers 2nd card and hides the first.
     def display(self):
         if self.dealer:
             print("hidden")
