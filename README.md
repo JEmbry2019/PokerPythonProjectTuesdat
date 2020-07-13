@@ -3,35 +3,31 @@
 #### Summer 2020
 
 
-James Embry <br>
-June 2020 <br>
+James Embry<br>
+June 2020<br>
 Tuesday Python Class <br>
 Blackjack Poker Project <br>
-This program follows examples found online and on Github:
-* Title: Code Louisville Example
-* Author: Zach Tibbitts
-* Date: 2020
 
-* Title: Tkinter GUI Programing by Example
-* Author: David Love
-* Date: 2018 
+This program follows examples found online and on Github:<br>
+Title: Code Louisville Example<br>
+Author: Zach Tibbitts<br>
+Date: 2020<br>
+
+Title: Tkinter GUI Programing by Example<br>
+Author: David Love<br>
+Date: 2018 <br>
 
 # What is it? <br>
 A program developed using Python that runs on the command line.  A player will play Blackjack Poker against the computer. 
 
-# Technical Summary <br>
-* Python 3.8 <br>
-* Visual Studio Code <br>
-
-# Code Louisville requirements it meets.
-* Implement a “master loop” console application where the user can repeatedly enter commands/perform actions, including choosing to exit the program
-* Create a class, then create at least one object of that class and populate it with data
-* Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program
-* Create and call at least 3 functions, at least one of which must return a value that is used
+# Technical Summary
+* Python 3.8
+* Visual Studio Code
 
 
 # How to make the Project work.<br>
-1. Open the GitHub link with Visual Studio Code.<br>
+1. Open the GitHub link with Visual Studio Code.
+
 2. Click on the *game.py* file tab.
 2. Create a Console by Clicking  on Terminal and Open a New Terminal.
 3. Run the program with VS Code using one of the following:
@@ -49,7 +45,7 @@ A program developed using Python that runs on the command line.  A player will p
  
 ## Source Overview
 
-This project consists of a few classes:
+This project consists of a 4 classes:
 
 * `Game` The loop logic to run the game is contained in this class.
 * `Card` This class instantiates a Card object.
@@ -69,37 +65,39 @@ This project consists of a few classes:
 
  
 
-### Requirements:
+
+# Code Louisville requirements it meets.
 
 This project fulfills the following requirements:
 
 * Implement a “master loop” console application where the user can repeatedly enter commands/perform actions, including choosing to exit the program
     * There are two such loops. The outer (main) 'playing' loop and the inner 'Hit/Stick input' loop. Both are in `game.py`
 
-      ***** STOPPED HERE  *****  With Edit.
+
 
 * Create a class, then create at least one object of that class and populate it with data
-    * All of `Card`, `Hand`, and `Deck` qualify
+    * All of `Card`, `Hand`, and `Deck` qualify.  See the classes for details.
 * Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program
-    * Both `Hand` and `Deck` use a list internally to store their data
-* Create and call at least 3 functions, at least one of which must return a value that is used
-    * So many functions. In particular `draw()` returns a value, a `Card` that is used
+    * The `Hand` class creates a list of card objects for the player and the dealer.  The `Deck` class uses  list comprehension to create a list containing 52 cards and a shuffle method to randomize the list.
+
+* Create and call at least 3 functions, at least one of which must return a value that is used.
+    * The `deal()` function in the `Deck` class when called from `game.py` returns a `Card` from the top of the `Deck`.
+    * The `add_card()` function in the `Hand` class is called from `game.py`, it appends a `Card` to the player or dealer `cards` list.
+    * The `calculate_rank` function in the `Hand` class is called by the `get_rank` function. It calculates the value of the `card` in the `self.cards` list.
+
+
+# `STOPPED HERE`********** WITH EDIT
+      
+
 * Create 3 or more unit tests for your application
     * They reside in `tests.py`
 
-SAMPLE BELOW ------------- SAMPLE BELOW
-Features Include:<br>
-Homepage<br>
-Privacy page example<br>
-Camper page (first and last name, email, phone, enrollment date, (Create, Edit, Details, and Delete))<br>
-Game Choice page (3 dropdown lists with 3 chioces of games in each (Create, Edit, Details, and Delete))<br>
-Meal Choice page (3 dropdown lists with 3 chioces of food in each (Create, Edit, Details, and Delete))<br>
-Enrollment page (Lists all campers with details) (Enroll new campers on Create page with dropdown lists that inclide the campers full name, school level (Primary, Middle, or High), their game selection (and other choices),  thier food selection (and other choices), (Create, Edit, Details, and Delete))<br> -->
 
-Milestone List <br>
+
+# Milestone List
 Week 1: Outline project ideas. <br>
 Week 3: Decide on a project and complete an outline <br>
-Week 5: Build selection categories (cards, deck, player, scoring, CSV file.). <br>
+Week 5: Build selection categories (card, deck, hand, and game.). <br>
 Week 7: Check for problem and correct  mistakes. <br>
 Week 10: Complete project. <br>
 Week 12: Projects Due by Friday.
