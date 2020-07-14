@@ -28,5 +28,3 @@ class Deck:
         if len(self.cards) > 1:
            return self.cards.pop(0)
 
-        print('This removes a card from the deck') #doesn't print
-        print(self.cards.pop(0))
