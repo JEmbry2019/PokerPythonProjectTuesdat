@@ -23,11 +23,12 @@ class Game:
             # This call the Hand class and 2 Hand instances.
             self.player_hand = Hand()
             self.dealer_hand = Hand(dealer=True)
-            # This code deals 2 cards to player and dealer and displays results.
-            for i in range(2):
+            # This code deals 2 cards to player and dealer and displays results (_ is an unused variable).
+            for _ in range(2):
                 self.player_hand.add_card(self.deck.deal())
                 self.dealer_hand.add_card(self.deck.deal())
-            print("Welcome to Blackjack Poker!\n")
+            time.sleep(1)    
+            print("\nWelcome to Blackjack Poker!\n")
             time.sleep(2)
             print("Your hand is:")
             self.player_hand.display()
@@ -113,6 +114,8 @@ class Game:
         elif dealer_has_blackjack:
             print("Dealer has blackjack! Dealer wins!")
 
+    def add(self, x, y):
+        return x + y
 
 if __name__ == "__main__":
     g = Game()

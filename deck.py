@@ -17,7 +17,7 @@ class Deck:
                       ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]]
         print('This is the deck')
         print(self.cards)
-
+    # This method puts the cards list in random order.
     def shuffle(self):
         if len(self.cards) > 1:
             random.shuffle(self.cards)

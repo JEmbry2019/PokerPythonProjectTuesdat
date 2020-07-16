@@ -13,4 +13,3 @@ class Card:
     def __repr__(self):
         return " of ".join((self.rank, self.suit))
 
-

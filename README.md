@@ -41,6 +41,7 @@ A program developed using Python that runs on the command line.  A player will p
   * s for STAY
 
 # Features<br>
+* The deck is displayed for all to see(No Cheating!).
 * The Player is welcomed.
 * A hand is delt for the Player and the Dealer.
 * The Player's hand is shown with a total value.
