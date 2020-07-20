@@ -119,13 +119,3 @@ Once your environment is set up, you can run tests with:
 * `pipenv run python tests.py`
  
 
-#### Additional Requirements
-* Your code have comments that document major sections of your code to make it easier to read
-    * Both inline comments and pydoc comments on the functions themselves
-* Your project code is uploaded to your GitHub account, in its own repository, with at least 5 commits
-* We need to see that you’ve used Git to update your GitHub profile at least 5 times
-* It must include a README file located at the top level directory of your project that includes:
-    * (You're reading it!)
-    * A description of your project
-    * What features you chose to included (so we know what to look for)
-    * Any special instructions we might need to run your project
