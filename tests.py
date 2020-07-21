@@ -3,18 +3,14 @@ import unittest
 from card import Card
 from deck import Deck
 from hand import Hand
-from game import Game
+# from game import Game
 
 """ This file contains 3 tests.
     Tested are the add_card(), calculate_rank(), and the deal() functions.
-    Some print statements were added for clearity.
-
+    Some print statements were added for clarity.
 """
 
-
 class HandTestCase(unittest.TestCase):
-
-
     
 #  # Test 1 -A Card object is added to the cards list.
     def test_add_card(self):

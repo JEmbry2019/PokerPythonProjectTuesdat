@@ -47,14 +47,17 @@ A program developed using Python that runs on the command line.  A player will p
 * The Player's hand is shown with a total value.
 * The Dealer's hand has 1 card hidden and 1 card shown with it's value (standard rules).
 * The Player is asked if they want another card (Hit) or to stay with their current hand (Stick).
-* A card is delt and the new value is displayed.
+* With (Hit) a card is delt and the new value is displayed.
 * The Player either loses or is asked to choose Hit or Stick.
 * The winner is displayed.
 * The Player is asked if they would like to continue to play or not.
 
-# TEST ???????<br>
+# TEST<br>
+The tests.py file contains 3 tests.
+* Tested are the `add_card()`, `calculate_rank()`, and the `deal()` functions.
+* Some print statements were added for clarity.
  
-## Source Overview
+# Source Overview
 
 This project consists of a 4 classes:
 
@@ -84,10 +87,9 @@ This project fulfills the following requirements:
 * Implement a “master loop” console application where the user can repeatedly enter commands/perform actions, including choosing to exit the program
     * There are two such loops. The outer (main) 'playing' loop and the inner 'Hit/Stick input' loop. Both are in `game.py`
 
-
-
 * Create a class, then create at least one object of that class and populate it with data
     * All of `Card`, `Hand`, and `Deck` qualify.  See the classes for details.
+
 * Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program
     * The `Hand` class creates a list of card objects for the player and the dealer.  The `Deck` class uses  list comprehension to create a list containing 52 cards and a shuffle method to randomize the list.
 
@@ -95,12 +97,10 @@ This project fulfills the following requirements:
     * The `deal()` function in the `Deck` class when called from `game.py` returns a `Card` from the top of the `Deck`.
     * The `add_card()` function in the `Hand` class is called from `game.py`, it appends a `Card` to the player or dealer `cards` list.
     * The `calculate_rank` function in the `Hand` class is called by the `get_rank` function. It calculates the value of the `card` in the `self.cards` list.
-
-
-# `STOPPED HERE`********** WITH EDIT
+     
 * Create 3 or more unit tests for your application
     * They reside in `tests.py`
-      
+    * Tested are the `add_card()`, `calculate_rank()`, and the `deal()` functions.
 
 # Milestone List
 Week 1: Outline project ideas. <br>
@@ -108,14 +108,11 @@ Week 3: Decide on a project and complete an outline <br>
 Week 5: Build selection categories (card, deck, hand, and game.). <br>
 Week 7: Check for problem and correct  mistakes. <br>
 Week 10: Complete project. <br>
-Week 12: Projects Due by Friday.
+Week 11: Work on Unittest test file.<br>
+Week 12: Projects Due by Friday July 31.<br>
 
 
 
-## Tests
 
-Once your environment is set up, you can run tests with:
-
-* `pipenv run python tests.py`
  
 
