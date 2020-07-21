@@ -84,6 +84,10 @@ This project consists of a 4 classes:
 
 This project fulfills the following requirements:
 
+* The project is on Github with at least 5 commits.
+    * The project is on Github. https://github.com/JEmbry2019/Poker_Python_Project_Tuesday
+    * There are over 20 commits. https://github.com/JEmbry2019/Poker_Python_Project_Tuesday/commits/master
+
 * Implement a “master loop” console application where the user can repeatedly enter commands/perform actions, including choosing to exit the program
     * There are two such loops. The outer (main) 'playing' loop and the inner 'Hit/Stick input' loop. Both are in `game.py`
 
