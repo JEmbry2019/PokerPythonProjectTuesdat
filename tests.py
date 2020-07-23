@@ -3,7 +3,7 @@ import unittest
 from card import Card
 from deck import Deck
 from hand import Hand
-# from game import Game
+
 
 """ This file contains 3 tests.
     Tested are the add_card(), calculate_rank(), and the deal() functions.
@@ -26,17 +26,6 @@ class HandTestCase(unittest.TestCase):
         self.assertEqual(size, initial_size + 1)
 
 
-#----------------------------------------------        
-
-    # def test_add_card_construction(self):
-    #     cards = Card(8, 'Clubs')
-
-    #     self.assertEqual(cards.rank, 'Clubs')
-    #     self.assertEqual(cards.suit, 8)
-
-
-# ---------------------------------
-
 # Test 2 - This function calculates rank correctly.   
     def test_calculate_rank(self):
 
@@ -47,9 +36,6 @@ class HandTestCase(unittest.TestCase):
         self.assertTrue(self.rank, 12)
 
 
-
-
-#-------------------------------------
 
 # Test 3 This function makes sure the deck has more than 1 card.
 class DeckTestCase(unittest.TestCase):
